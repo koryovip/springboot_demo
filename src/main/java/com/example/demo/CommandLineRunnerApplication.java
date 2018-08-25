@@ -34,6 +34,13 @@ public class CommandLineRunnerApplication {
         b0000Service.select2();
         logger.debug("==========================================================");
         b0000Service.select3();
+        logger.debug("==========================================================");
+        try {
+            b0000Service.insert0(20);
+//            b0000Service.update();
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         logger.debug("処理終了");
     }
 }
