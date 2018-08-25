@@ -30,6 +30,10 @@ public class CommandLineRunnerApplication {
     public void run(String... args) throws Exception {
         logger.debug("処理開始");
         b0000Service.select();
+        logger.debug("==========================================================");
+        b0000Service.select2();
+        logger.debug("==========================================================");
+        b0000Service.select3();
         logger.debug("処理終了");
     }
 }
