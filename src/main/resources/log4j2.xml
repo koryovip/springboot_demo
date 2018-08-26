@@ -14,7 +14,9 @@
 		<Logger name="org.springframework" level="debug" additivity="false">
 			<AppenderRef ref="ConsoleAppender" />
 		</Logger>
-
+		<Logger name="org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener" level="info" additivity="false">
+			<AppenderRef ref="ConsoleAppender" />
+		</Logger>
 		<Root level="debug">
 			<AppenderRef ref="ConsoleAppender" />
 		</Root>
